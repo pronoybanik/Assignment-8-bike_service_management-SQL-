@@ -3,6 +3,16 @@ import prisma from "../../../shared/pisma"
 
 
 const createBikeIntoDB = async (payload: Bike) => {
+    // check that id is exit or not ..?
+    const customerValue = await prisma.customer.findUnique({
+        where: {
+            customerId: payload.customerId
+        }
+    })
+
+    if (!customerValue) {
+        throw new Error("That Customer id is not valid")
+    }
 
     const result = await prisma.bike.create({
         data: payload
@@ -31,5 +41,5 @@ export const BikesService = {
     createBikeIntoDB,
     getAllBikeFromDB,
     getSingleBikeFromDB,
- 
+
 }
