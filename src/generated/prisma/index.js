@@ -183,7 +183,7 @@ const config = {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://postgres:112233@localhost:5432/Bike-Servicing?schema=public"
+        "value": "postgresql://sql_server_link_user:TQuJW9RNiILkYUI9cKOa8BaWxfjPDy49@dpg-d00ecl1r0fns73e6mtcg-a.singapore-postgres.render.com/sql_server_link"
       }
     }
   },

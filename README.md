@@ -1,5 +1,5 @@
 1. Project name: Bike Servicing Management
-2. Live link:
+2. Live link:https://bike-service-management-sql.vercel.app
 3. Tech stack: Express.js, Cors, Prisma, PostgresSQL
 
 

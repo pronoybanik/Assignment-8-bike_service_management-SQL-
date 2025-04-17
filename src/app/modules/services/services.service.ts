@@ -1,5 +1,4 @@
-import { error } from "console";
-import { ServiceRecord } from "../../../generated/prisma";
+import { ServiceRecord } from "@prisma/client";
 import prisma from "../../../shared/pisma"
 
 
