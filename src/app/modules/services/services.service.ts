@@ -57,10 +57,7 @@ const updateServicesIntoDB = async (id: string, data: Partial<ServiceRecord>): P
 
 export const fetchPendingOrOverdueServices = async () => {
     const sevenDaysAgo = new Date();
-    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-
-    console.log("sevenDaysAgo", sevenDaysAgo);
-    
+    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);    
   
     const result = prisma.serviceRecord.findMany({
       where: {
